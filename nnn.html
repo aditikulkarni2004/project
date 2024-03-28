@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+    <!-- Menu -->
+    <div class="menu">
+        <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <ion-icon name="grid-outline"></ion-icon>
+            </label>
+
+            <label class="logo">Adiana Car Rental Service</label>
+
+            <ul>
+                <li><a href="#hero-section" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#app">Download App</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Menu -->
+    <!-- Hero Section -->
+    <div class="section flex" id="hero-section">
+        <div class="text">
+            <h1 class="primary" style="font-size: 40px;">
+                Welcome to Adiana car rental</span>
+            </h1>
+
+            <p class="tertiary" style="font-size: 25px; text-align: justify;">
+              Explore convenience with our Adiana car rental service on our user-friendly website. 
+              Select from a diverse fleet of vehicles, enjoy transparent pricing, and book effortlessly online.
+               Our service ensures a seamless experience, providing reliable transportation solutions tailored to your needs
+              . Travel with confidence and comfort – your journey, your way.
+            </p>
+
+            <a href="#menu" class="btn">Explore Cars</a>
+        </div>
+        <div class="visual">
+            <img src="car2.jpg" alt="" />
+        </div>
+    </div>
+    <!-- End Hero Section -->
+<section> 
+<div class="sys"> 
+<div class="container"> 
+    <form id="carRentalForm"> 
+        <label for="carType">Select Car Type:</label> 
+        <select id="carType" name="carType">
+            <option value="car">Select car</option>
+            <option value="mahindrathar">Mahindra Thar</option> 
+            <option value="sedan">Sedan</option> 
+            <option value="creta">Creta</option> 
+            <option value="nexon">Nexon</option> 
+            <option value="tata">Tata Punch</option> 
+        </select> 
+        <label for="rentalDays">Rental Days:</label> 
+        <input type="number" id="rentalDays" name="rentalDays" min="1" required> 
+
+        <label for="name">Your Name:</label> 
+        <input type="text" id="name" name="name" required> 
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button> 
+
+        <label for="totalCost">Total Cost:</label> 
+        <input type="text" id="totalCost" name="totalCost" readonly> 
+
+        <button type="submit">Submit</button> 
+    </form> 
+</div>
+</div>
+</section>
+    <!-- How It Works -->
+    <section>
+    <div class="section" id="how-it-works">
+        <div class="txt">
+            <h1>Why Adiana?</h1>
+        </div>
+        <div class="container flex">
+            <div class="box">
+                <h3>Availability</h3>
+                <ion-icon name="time-outline"></ion-icon>
+                <p>
+                    The service is accessible 24/7, ensuring constant availability and support for users.
+                </p>
+            </div>
+            <div class="box active">
+                <h3>Best Service</h3>
+                <ion-icon style="color: black;" name="trophy-outline"></ion-icon>
+                <p>
+                    A skilled and seasoned driver with extensive practical driving expertise.
+                </p>
+            </div>
+            <div class="box">
+                <h3>Cost Savings</h3>
+                <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+                <p>
+                    Efficient booking process, competitive rates, reasonable and affordable prices.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>    
+    <!-- End How It Works -->
+    <!-- About -->
+    <div class="section" id="about">
+        <div class="container flex">
+            <div class="visual">
+                <img src="carabout.jpeg" alt="" />
+            </div>
+            <div class="text">
+                <div class="secondary" style="font-size: 30px;">About Our Service</div>
+                <h3 class="tertiary" style="font-size: 30px;">100+ Services</h3>
+                <p style="font-size: 20px; text-align: justify;">
+                    Adiana is the leading marketplace for car sharing in emerging markets,with over 20,000 cars on its technology-driven platform across India, Indonesia, and Egypt.
+                     Adiana empowers host entrepreneurs to safely and easily share their cars to earn additional passive income.
+                     Guests in the Adiana community enjoy a diverse, affordable selection of cars to unlock memorable driving experiences with friends and family
+                </p>
+                <a href="#menu" class="btn">Explore Cars</a>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->   
+    <div class="section" id="car">
+        <div class="container-car">
+            <ul class="category">
+                <li class="active">All</li>
+                <li>Mahindra Thar</li>
+                <li>Sedan</li>
+                <li>Creta</li>
+                <li>Nexon</li>
+                <li>Tata punch</li>
+            </ul>
+            <div class="container">
+                <div class="car-menu">
+                    <div class="menu-item">
+                        <img src="thar.jpeg">
+                        <div class="title">Mahindra Thar</div>
+
+                        <div class="name">Ax Opt-4 | Diesel</div>
+
+                        <div class="order flex">
+                            <div class="price">Rs. 199/hr</div>
+                            <a href="#" class="btn btn-menu">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img  src="sedan.jpeg"
+                            alt=""  />
+                            <div class="title">Sedan</div>
+                        <div class="name">EX | Petrol</div>                    
+                        <div class="order flex">
+                            <div class="price">Rs. 150/hr</div>
+                            <a href="#" class="btn btn-menu">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="creta.jpeg"
+                            alt="" />
+                            <div class="title">Creta</div>
+                        <div class="name">Kia EV-6 | Electric</div>
+                        <div class="order flex">
+                            <div class="price">Rs.110/hr</div>
+                            <a href="#" class="btn btn-menu">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="nexon.jpeg"
+                            alt="" />
+                            <div class="title">Nexon</div>
+                        <div class="name">Smart Plus | Petrol</div>
+                        <div class="order flex">
+                            <div class="price">Rs. 95/hr</div>
+                            <a href="#" class="btn btn-menu">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="tata.jpeg"
+                            alt="" />
+                            <div class="title">Tata Punch</div>
+                        <div class="name">Punch Pure | CNG</div>
+                        <div class="order flex">
+                            <div class="price">RS.90/hr</div>
+                            <a href="#" class="btn btn-menu">Book Now</a>
+                        </div>
+                    </div>                                                       
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ -->
+    <div class="section" id="faq">
+        <h2 class="secondary">Frequently Asked Questions</h2>
+        <div class="faq">
+            <details>
+                <summary>Can I pick up in one destination and drop off in another?</summary>
+                <div class="content">
+                    <p>
+                        Yes!!!! you can.
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary>How can I cancel the booking?</summary>
+                <div class="content">
+                    <p>
+                        Check out cancellation process or contact us.
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary>I booked two times what shoud I do?</summary>
+                <div class="content">
+                    <p>
+                        You can cancel any one before 24 hours
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary>I booked for wrong date what should I do?</summary>
+                <div class="content">
+                    <p>
+                        contact us or cancel and rebook.
+                    </p>
+                </div>
+            </details>
+        </div>
+    </div>
+    <!-- End FAQ -->
+    <!-- App -->
+    <div class="section" id="app">
+        <div class="container flex">
+            <div class="app-photo">
+                <img width="500px" src="Screenshot 2024-02-11 000210.png" alt="" />
+            </div>
+            <div class="text">
+                <h2 class="secondary">Download The CarRental App</h2>
+                <p>
+                  Introducing our innovative car rental service app! Experience seamless convenience with user-friendly interface, 
+                  real-time vehicle availability, and secure booking. Unlock a fleet of well-maintained cars for any occasion, with flexible rental options. 
+                  Your journey begins with us—effortless, reliable, and tailored to your needs. Download now for the ultimate driving experience!
+                </p>
+                <div class="download flex">
+                    <div class="app-store">
+                        <ion-icon name="logo-google-playstore"></ion-icon>
+                        <p>
+                            GET IT ON <br />
+                            <span>Google Play</span>
+                        </p>
+                    </div>
+                    <div class="app-store">
+                        <ion-icon name="logo-apple"></ion-icon>
+                        <p>
+                            Download on the <br />
+                            <span>App Store</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End App -->
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container flex">
+            <div class="footer-about">
+                <h2>About</h2>
+                <p>
+                  When you hire a car with Adiana, you’re guaranteed our excellent customer service from 
+                  the first contact right through to dropping off your keys, 
+                  regardless of whether you want to do that by chatting with our excellent team in person or prefer to go digital on the app. 
+                  Car rental in Adiana doesn’t need to be complicated, so we’ve made things as simple as we can so you can spend more
+                   time planning your trip of a lifetime.
+
+                  Oh and don’t forget that with GO you’ll get unlimited kilometres; 
+                  free AA roadside assistance and our awesome Adiana Play discount card. It really does pay to rent with GO.
+                </p>
+            </div>
+            <div class="footer-category">
+                <h2>Vehicles</h2>
+                <ul>
+                    <li>Electric vehicles</li>
+                    <li>SUVs</li>
+                    <li>4 wheel drives</li>
+                    <li>Small cars</li>                    
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Our team</li>
+                    <li>services</li>
+                    <li>Customer reviews</li>
+                </ul>
+            </div>
+            <div class="get-in-touch">
+                <h2>Get in touch</h2>
+                <ul>
+                    <li>Account</li>
+                    <li>Support Center</li>
+                    <li>Feedback</li>
+                    <li>Suggession</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2024 All Rights Reserved</p>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <!-- Ion Icons Js -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <script src="scriptx.js"></script>
+</body>
+</html>
